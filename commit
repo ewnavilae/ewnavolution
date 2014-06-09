@@ -1,0 +1,9 @@
+#!/bin/bash
+while true; do
+    read -p "What is your commit message? " yn
+    echo $yn
+    git add .
+    git commit -m "$yn"
+    git push 
+    break;
+done
